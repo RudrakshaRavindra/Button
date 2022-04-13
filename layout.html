@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My LayoutPage</title>
+        <meta http-equiv="refresh" content="5">
+        <style>
+            body{
+                display:grid;;
+                grid-template-areas:
+                "nav header header"
+                "nav article sidebar"
+                "nav footer footer";
+                grid-template-rows: 10% 1fr 5%;
+                grid-template-columns: 20% 1fr 10%;
+                grid-row-gap: 1ch;
+                grid-column-gap: 1ch;
+                height: 100vh;
+                margin: 1%;
+
+            }
+            #pageheader{
+                grid-area: header;
+            }
+            #pagenav{
+                grid-area: nav;
+            }
+            #pagearticle{
+                grid-area: article;
+            }
+            #pagesidebar{
+                grid-area: sidebar;
+            }
+            #pagefooter{
+                grid-area: footer;
+            }
+            pre{
+                border: 1px dotted red;
+                padding: 1%;
+                color: white;
+                font-size: x-large;
+            }
+            header,nav,article,div,footer{
+                background-color: cornflowerblue;
+        
+            }
+            article{
+                text-align: center;
+                font-size: xx-large;
+            }
+            footer,nav,div{
+                font-size: x-large;
+            }
+            footer{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <header id="pageheader"><pre><button type="button" onclick="alert(' Oops No HTML available')">HTML </button><button type="button" onclick="alert('Oops No CSS available')">CSS</button><button type="button" onclick="alert('Oops No JAVASCRIPT available')">JAVASCRIPT</button><button type="button" onclick="alert('Oops No PHP available')">PHP</button><button type="button" onclick="alert('Oops No BOOTSTRAP available')">BOOTSTRAP</button><button type="button" onclick="alert('Oops No JAVA available')">JAVA</button></pre></header>
+        <nav id="pagenav"><u>NavigationBar</u><br>
+            <button style="font-size: x-large;" type="button" onclick="document.write('Hello Java')">Folder</button><br>
+            <button style="font-size: x-large;">Content</button><br>
+            <button style="font-size: x-large;">Files</button><br>
+            <button style="font-size: x-large;">About</button><br>
+            <button style="font-size: x-large;">Information</button><br>
+            <button style="font-size: x-large;">Structure</button>
+        </nav>
+        <article id="pagearticle"><u>Article Content</u>
+            <p>
+                A paragraph is a series of related sentences developing a central idea, called the topic.
+                 Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified idea.
+                 Paragraphs add one idea at a time to your broader argument.
+            </p> </article>
+        <div id="pagesidebar"><u>Sidebar</u></div>
+        <footer id="pagefooter">This Page was Ended</footer>
+    </body>
+</html>
